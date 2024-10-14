@@ -44,30 +44,44 @@ body {
   gap: 30px;
   height: 100vh;
   padding: 50px;
+  flex-wrap: wrap; /* Allows items to wrap on smaller screens */
 }
+
+/* Styles for the cards */
 #about-card1,
-#about-card2,
-#about-card3 {
+#about-card2 {
   height: 380px;
   width: 300px;
   padding: 25px;
   border-radius: 10px;
   background-color: hsl(0, 0%, 60%);
+  transition: transform 0.3s ease;
 }
+
+#about-card1:hover,
+#about-card2:hover {
+  transform: translateY(-10px);
+}
+
 .about-cards {
   display: grid;
   justify-content: center;
   align-items: center;
+  text-align: center;
 }
+
 .about-cards span {
   font-size: 30px;
 }
+
 .about-cards .about-cards-heading {
   font-size: 20px;
 }
+
 .about-cards .about-cards-desc {
   font-size: 40px;
 }
+
 .about-cards button {
   padding: 10px;
   cursor: pointer;
@@ -75,14 +89,99 @@ body {
   border: none;
   font-size: 20px;
 }
+
 .about-cards #button1 {
   background-color: hsl(120, 100%, 65%);
 }
+
 .about-cards #button2 {
   background-color: hsl(30, 100%, 60%);
 }
-.about-cards #button3 {
-  background-color: hsl(240, 100%, 70%);
+
+/* Media Queries for responsiveness */
+@media (max-width: 1200px) {
+  /* For large tablets and small laptops */
+  .about-page {
+    padding: 20px;
+    gap: 20px;
+  }
+
+  #about-card1,
+  #about-card2 {
+    width: 250px;
+    height: 350px;
+  }
+
+  .about-cards span {
+    font-size: 28px;
+  }
+
+  .about-cards .about-cards-desc {
+    font-size: 36px;
+  }
+}
+
+@media (max-width: 768px) {
+  /* For tablets */
+  .about-page {
+    flex-direction: column;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  #about-card1,
+  #about-card2 {
+    width: 220px;
+    height: 320px;
+  }
+
+  .about-cards span {
+    font-size: 24px;
+  }
+
+  .about-cards .about-cards-heading {
+    font-size: 18px;
+  }
+
+  .about-cards .about-cards-desc {
+    font-size: 32px;
+  }
+
+  .about-cards button {
+    font-size: 18px;
+    padding: 8px;
+  }
+}
+
+@media (max-width: 480px) {
+  /* For mobile devices */
+  .about-page {
+    gap: 5px;
+    display: flex;
+  }
+
+  #about-card1,
+  #about-card2 {
+    width: 180px;
+    height: 280px;
+  }
+
+  .about-cards span {
+    font-size: 20px;
+  }
+
+  .about-cards .about-cards-heading {
+    font-size: 16px;
+  }
+
+  .about-cards .about-cards-desc {
+    font-size: 26px;
+  }
+
+  .about-cards button {
+    font-size: 16px;
+    padding: 6px;
+  }
 }
 
 /* -------------Course Page------------- */
@@ -213,7 +312,7 @@ body {
   #box4 #subject,
   #box5 #subject,
   #box6 #subject {
-    font-size: 50px;
+    font-size: 35px;
   }
   button {
     font-size: 20px;
