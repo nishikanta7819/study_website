@@ -16,10 +16,11 @@ body {
 
 .page1 {
   margin: 30px 20px 20px 20px;
-  height: 100vh;
+  /* height: 100vh; */
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 250px;
 }
 .page1 .box1 {
   height: 350px;
