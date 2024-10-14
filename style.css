@@ -35,8 +35,58 @@ body {
   font-size: 80px;
 }
 
-/* -------------Page2------------- */
-.page2 {
+/* -----------------About Page--------------- */
+
+.about-page {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+  height: 100vh;
+  padding: 50px;
+}
+#about-card1,
+#about-card2,
+#about-card3 {
+  height: 380px;
+  width: 300px;
+  padding: 25px;
+  border-radius: 10px;
+  background-color: hsl(0, 0%, 60%);
+}
+.about-cards {
+  display: grid;
+  justify-content: center;
+  align-items: center;
+}
+.about-cards span {
+  font-size: 30px;
+}
+.about-cards .about-cards-heading {
+  font-size: 20px;
+}
+.about-cards .about-cards-desc {
+  font-size: 40px;
+}
+.about-cards button {
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  border: none;
+  font-size: 20px;
+}
+.about-cards #button1 {
+  background-color: hsl(120, 100%, 65%);
+}
+.about-cards #button2 {
+  background-color: hsl(30, 100%, 60%);
+}
+.about-cards #button3 {
+  background-color: hsl(240, 100%, 70%);
+}
+
+/* -------------Course Page------------- */
+.course-page {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -66,10 +116,10 @@ body {
   background-color: hsl(60, 100%, 30%);
 }
 #box5 {
-  background-color: hsl(348, 83%, 30%);
+  background-color: hsl(350, 100%, 70%);
 }
 #box6 {
-  background-color: hsl(240, 100%, 30%);
+  background-color: hsl(39, 100%, 30%);
 }
 
 #box2 #number,
@@ -87,17 +137,12 @@ body {
   font-size: 70px;
   font-weight: bold;
 }
-button {
+.course-page button {
   padding: 20px;
   cursor: pointer;
   border-radius: 20px;
   border: 1px solid gray;
   font-size: 30px;
-}
-
-/* ------------Page3------------ */
-.page3 {
-  height: 100vh;
 }
 
 /* ------------- Responsive Design ------------- */
@@ -176,7 +221,10 @@ button {
   }
 }
 
-/* -----------------Page3---------- */
+/* -----------------Banner Page---------- */
+.banner-page {
+  height: 100vh;
+}
 .banner-container {
   position: relative;
   width: 100%;
@@ -224,7 +272,7 @@ button {
 }
 
 @media (max-width: 480px) {
-  .page3{
+  .banner-page {
     height: 60vh;
   }
   .banner {
@@ -275,6 +323,7 @@ button {
 .footer-input button {
   border-radius: 40px;
   padding: 5px 40px 5px 40px;
+  border: 1px solid gray;
 }
 .footer-input button:hover {
   background-color: black;

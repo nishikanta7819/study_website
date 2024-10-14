@@ -5,7 +5,7 @@ gsap.from(".page1 .box1", {
   delay: 1,
   borderRadius: "50px",
 });
-gsap.from("h1", {
+gsap.from(" .texts h1", {
   y: 50,
   duration: 2,
   delay: 3,
@@ -27,10 +27,14 @@ document.querySelectorAll(".box").forEach((box) => {
   });
 });
 
+document.getElementById("button1").addEventListener("click", function () {
+  window.location.href = "https://nishikanta7819.github.io/portfolio/";
+});
+
 document.getElementById("learnhtml").addEventListener("click", function () {
   window.location.href = "learnhtml.html";
 });
 
-document.getElementById("learncss").addEventListener("click",function(){
-  window.location.href="learncss.html";
-})
+document.getElementById("learncss").addEventListener("click", function () {
+  window.location.href = "learncss.html";
+});
