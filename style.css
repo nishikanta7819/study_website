@@ -43,7 +43,11 @@ body {
   flex-direction: column;
   gap: 30px;
 }
-#box2, #box3, #box4, #box5, #box6 {
+#box2,
+#box3,
+#box4,
+#box5,
+#box6 {
   height: 500px;
   width: 400px;
   padding: 25px;
@@ -52,16 +56,34 @@ body {
   position: sticky;
   top: 5vh;
 }
-#box2 { background-color: hsl(0, 100%, 30%); }
-#box3 { background-color: hsl(120, 100%, 15%); }
-#box4 { background-color: hsl(60, 100%, 30%); }
-#box5 { background-color: hsl(348, 83%, 30%); }
-#box6 { background-color: hsl(240, 100%, 30%); }
+#box2 {
+  background-color: hsl(0, 100%, 30%);
+}
+#box3 {
+  background-color: hsl(120, 100%, 15%);
+}
+#box4 {
+  background-color: hsl(60, 100%, 30%);
+}
+#box5 {
+  background-color: hsl(348, 83%, 30%);
+}
+#box6 {
+  background-color: hsl(240, 100%, 30%);
+}
 
-#box2 #number, #box3 #number, #box4 #number, #box5 #number, #box6 #number {
+#box2 #number,
+#box3 #number,
+#box4 #number,
+#box5 #number,
+#box6 #number {
   font-size: 100px;
 }
-#box2 #subject, #box3 #subject, #box4 #subject, #box5 #subject, #box6 #subject {
+#box2 #subject,
+#box3 #subject,
+#box4 #subject,
+#box5 #subject,
+#box6 #subject {
   font-size: 70px;
   font-weight: bold;
 }
@@ -89,14 +111,26 @@ button {
   .page1 .box1 .texts h1 {
     font-size: 60px;
   }
-  #box2, #box3, #box4, #box5, #box6 {
+  #box2,
+  #box3,
+  #box4,
+  #box5,
+  #box6 {
     width: 350px;
     height: 400px;
   }
-  #box2 #number, #box3 #number, #box4 #number, #box5 #number, #box6 #number {
+  #box2 #number,
+  #box3 #number,
+  #box4 #number,
+  #box5 #number,
+  #box6 #number {
     font-size: 80px;
   }
-  #box2 #subject, #box3 #subject, #box4 #subject, #box5 #subject, #box6 #subject {
+  #box2 #subject,
+  #box3 #subject,
+  #box4 #subject,
+  #box5 #subject,
+  #box6 #subject {
     font-size: 60px;
   }
   button {
@@ -114,18 +148,130 @@ button {
   .page1 .box1 .texts h1 {
     font-size: 40px;
   }
-  #box2, #box3, #box4, #box5, #box6 {
+  #box2,
+  #box3,
+  #box4,
+  #box5,
+  #box6 {
     width: 300px;
     height: 300px;
   }
-  #box2 #number, #box3 #number, #box4 #number, #box5 #number, #box6 #number {
+  #box2 #number,
+  #box3 #number,
+  #box4 #number,
+  #box5 #number,
+  #box6 #number {
     font-size: 50px;
   }
-  #box2 #subject, #box3 #subject, #box4 #subject, #box5 #subject, #box6 #subject {
+  #box2 #subject,
+  #box3 #subject,
+  #box4 #subject,
+  #box5 #subject,
+  #box6 #subject {
     font-size: 50px;
   }
   button {
     font-size: 20px;
     padding: 10px;
+  }
+}
+
+/* -------------Footer------------- */
+.footer {
+  background-color: white;
+  height: 60vh;
+}
+.footer-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.footer-text img {
+  height: 80px;
+}
+.footer-text .logo-name {
+  font-size: 90px;
+  font-weight: 700;
+}
+.footer-input {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+.footer-input input {
+  border: 1px solid gray;
+  padding: 10px;
+  border-radius: 40px;
+  width: 300px;
+}
+.footer-input button {
+  border-radius: 40px;
+  padding: 5px 40px 5px 40px;
+}
+.footer-input button:hover {
+  background-color: black;
+  color: white;
+}
+.footer-links {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  cursor: pointer;
+}
+.footer-copyright {
+  display: flex;
+  justify-content: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .footer-text .logo-name {
+    font-size: 50px;
+  }
+
+  .footer-input input {
+    width: 200px;
+  }
+
+  .footer-input button {
+    padding: 5px 20px;
+  }
+
+  .footer-links {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .footer{
+    height: 50vh;
+    display: grid;
+  }
+  .footer-text .logo-name {
+    font-size: 40px;
+  }
+
+  .footer-input {
+    flex-direction: column;
+    gap: 10px;
+    display: flex;
+    align-items: center;
+  }
+
+  .footer-input input {
+    width: 80%;
+  }
+
+  .footer-input button {
+    width: 100px;
+  }
+
+  .footer-links {
+    flex-direction: row;
+    gap: 10px;
   }
 }
