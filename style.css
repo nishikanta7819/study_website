@@ -8,10 +8,64 @@ html,
 body {
   height: 100%;
   width: 100%;
-  /* background-color: black; */
   font-family: Arial, Helvetica, sans-serif;
 }
+/* ------------Navbar---------------- */
+.nav-bar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100px;
+  padding: 30px 50px 30px 50px;
+  gap: 20px;
+}
+.day-night {
+  height: 40px;
+  width: 80px;
+  overflow: hidden;
+  background-color: lightblue;
+  display: flex;
+  justify-content: center;
+  border-radius: 50px;
+}
+.sun,
+.moon {
+  display: none;
+}
 
+.sun {
+  background-color: yellow;
+  border-radius: 50%;
+  height: 30px;
+  aspect-ratio: 1/1;
+  animation: 3s linear 0s infinite alternate sun-rise;
+}
+
+.moon {
+  background-color: white;
+  border-radius: 50%;
+  height: 30px;
+  aspect-ratio: 1/1;
+  animation: 3s linear 0s infinite alternate sun-set;
+}
+
+@keyframes sun-rise {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
+
+@keyframes sun-set {
+  from {
+    transform: translateY(100px);
+  }
+  to {
+    transform: translateY(0);
+  }
+}
 /* ---------------Page1---------------- */
 
 .page1 {
@@ -23,9 +77,9 @@ body {
   margin-bottom: 250px;
 }
 .page1 .box1 {
-  height: 350px;
-  width: 650px;
-  background-color: hsl(240, 60%, 30%);
+  height: 400px;
+  width: 750px;
+  background: linear-gradient(to bottom, hsl(240, 100%, 25%), hsl(0, 0%, 100%));
   border-radius: 10px;
   display: flex;
   justify-content: center;
@@ -58,19 +112,19 @@ body {
   top: 5vh;
 }
 #box2 {
-  background-color: hsl(0, 100%, 30%);
+  background-color: hsl(0, 100%, 40%);
 }
 #box3 {
-  background-color: hsl(120, 100%, 15%);
+  background-color: hsl(120, 100%, 25%);
 }
 #box4 {
-  background-color: hsl(60, 100%, 30%);
+  background-color: hsl(60, 100%, 50%);
 }
 #box5 {
   background-color: hsl(350, 100%, 70%);
 }
 #box6 {
-  background-color: hsl(39, 100%, 30%);
+  background-color: hsl(39, 100%, 50%);
 }
 
 #box2 #number,

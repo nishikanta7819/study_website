@@ -21,21 +21,25 @@ document.querySelectorAll(".box").forEach((box) => {
       trigger: box,
       start: "top 5%",
       end: "bottom 10%",
-      // markers: true,
       scrub: true,
     },
   });
 });
 
-document.getElementById("button1").addEventListener("click", function () {
-  window.location.href = "https://nishikanta7819.github.io/portfolio/";
-});
+function toggleSunAndMoon() {
+  const currentHour = new Date().getHours();
+  const sun = document.getElementById("sun");
+  const moon = document.getElementById("moon");
+  const dayNightDiv = document.querySelector(".day-night");
 
-document.getElementById("learnhtml").addEventListener("click", function () {
-  window.location.href = "learnhtml.html";
-});
-
-document.getElementById("learncss").addEventListener("click", function () {
-  window.location.href = "learncss.html";
-});
-
+  if (currentHour >= 6 && currentHour < 18) {
+    sun.style.display = "block";
+    moon.style.display = "none";
+    dayNightDiv.style.backgroundColor = "lightblue";
+  } else {
+    sun.style.display = "none";
+    moon.style.display = "block";
+    dayNightDiv.style.backgroundColor = "black";
+  }
+}
+window.onload = toggleSunAndMoon;
