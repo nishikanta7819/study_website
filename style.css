@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: black;
+}
+
+/* ---------------Page1---------------- */
+
+.page1 {
+  margin: 30px 20px 20px 20px;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page1 .box1 {
+  height: 350px;
+  width: 650px;
+  background-color: hsl(240, 60%, 30%);
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.page1 .box1 .texts h1 {
+  color: white;
+  font-size: 80px;
+}
+
+/* -------------Page2------------- */
+.page2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 30px;
+}
+#box2, #box3, #box4, #box5, #box6 {
+  height: 500px;
+  width: 400px;
+  padding: 25px;
+  display: grid;
+  border-radius: 10px;
+  position: sticky;
+  top: 5vh;
+}
+#box2 { background-color: hsl(0, 100%, 30%); }
+#box3 { background-color: hsl(120, 100%, 15%); }
+#box4 { background-color: hsl(60, 100%, 30%); }
+#box5 { background-color: hsl(348, 83%, 30%); }
+#box6 { background-color: hsl(240, 100%, 30%); }
+
+#box2 #number, #box3 #number, #box4 #number, #box5 #number, #box6 #number {
+  font-size: 100px;
+}
+#box2 #subject, #box3 #subject, #box4 #subject, #box5 #subject, #box6 #subject {
+  font-size: 70px;
+  font-weight: bold;
+}
+button {
+  padding: 20px;
+  cursor: pointer;
+  border-radius: 20px;
+  border: 1px solid gray;
+  font-size: 30px;
+}
+
+/* ------------Page3------------ */
+.page3 {
+  height: 100vh;
+}
+
+/* ------------- Responsive Design ------------- */
+
+/* Tablets */
+@media (max-width: 768px) {
+  .page1 .box1 {
+    width: 500px;
+    height: 300px;
+  }
+  .page1 .box1 .texts h1 {
+    font-size: 60px;
+  }
+  #box2, #box3, #box4, #box5, #box6 {
+    width: 350px;
+    height: 400px;
+  }
+  #box2 #number, #box3 #number, #box4 #number, #box5 #number, #box6 #number {
+    font-size: 80px;
+  }
+  #box2 #subject, #box3 #subject, #box4 #subject, #box5 #subject, #box6 #subject {
+    font-size: 60px;
+  }
+  button {
+    font-size: 25px;
+    padding: 15px;
+  }
+}
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .page1 .box1 {
+    width: 350px;
+    height: 250px;
+  }
+  .page1 .box1 .texts h1 {
+    font-size: 40px;
+  }
+  #box2, #box3, #box4, #box5, #box6 {
+    width: 300px;
+    height: 300px;
+  }
+  #box2 #number, #box3 #number, #box4 #number, #box5 #number, #box6 #number {
+    font-size: 50px;
+  }
+  #box2 #subject, #box3 #subject, #box4 #subject, #box5 #subject, #box6 #subject {
+    font-size: 50px;
+  }
+  button {
+    font-size: 20px;
+    padding: 10px;
+  }
+}
