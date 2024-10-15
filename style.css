@@ -19,6 +19,14 @@ body {
   padding: 30px 50px 30px 50px;
   gap: 20px;
 }
+.navbar-links {
+  font-size: 20px;
+  transition: transform 0.3s ease;
+}
+.navbar-links:hover {
+  cursor: pointer;
+  transform: translateY(-5px);
+}
 .day-night {
   height: 40px;
   width: 80px;
@@ -113,18 +121,23 @@ body {
 }
 #box2 {
   background-color: hsl(0, 100%, 40%);
+  color: black;
 }
 #box3 {
   background-color: hsl(120, 100%, 25%);
+  color: black;
 }
 #box4 {
   background-color: hsl(60, 100%, 50%);
+  color: black;
 }
 #box5 {
   background-color: hsl(350, 100%, 70%);
+  color: black;
 }
 #box6 {
   background-color: hsl(39, 100%, 50%);
+  color: black;
 }
 
 #box2 #number,
@@ -150,7 +163,7 @@ body {
   font-size: 30px;
 }
 
-/* ------------- Responsive Design ------------- */
+/*Responsive Design*/
 
 /* Tablets */
 @media (max-width: 768px) {
@@ -226,7 +239,8 @@ body {
   }
 }
 
-/* -----------------Banner Page---------- */
+/* -----------------Banner Page----------------- */
+
 .banner-page {
   height: 100vh;
 }
@@ -262,6 +276,9 @@ body {
 }
 /* Responsive Design */
 @media (max-width: 768px) {
+  .banner-page {
+    height: 600px;
+  }
   .banner {
     font-size: 20px;
     padding: 8px 0;
@@ -313,6 +330,7 @@ body {
   font-size: 90px;
   font-weight: 700;
 }
+
 .footer-input {
   display: flex;
   justify-content: center;
@@ -348,6 +366,9 @@ body {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+  .footer {
+    height: 400px;
+  }
   .footer-text .logo-name {
     font-size: 50px;
   }
